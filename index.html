@@ -1,12 +1,81 @@
 <!DOCTYPE html>
-<html lang=br>
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>boletim gigital</title>
+  <meta charset="UTF-8" />
+  <!-- Faz o site funcionar bem no celular -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Boletim Digital ⚽</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    
+
+  <!-- CABEÇALHO -->
+  <header class="cabecalho">
+    <h1>📘 Boletim Digital ⚽</h1>
+    <p class="subtitulo">8º Ano — Estudante Exemplo ✨</p>
+  </header>
+
+  <!-- FAIXA DE META -->
+  <div class="faixa-meta">
+    🎯 Meta: Média 6,0 — Vamos com tudo! 🏆
+  </div>
+
+  <!-- CARDS DE RESUMO -->
+  <section class="cards-resumo">
+    <div class="card">
+      <h2>📊 Média Geral</h2>
+      <p id="media-geral">—</p>
+    </div>
+
+    <div class="card">
+      <h2>📅 Total de Faltas</h2>
+      <p id="total-faltas">—</p>
+    </div>
+
+    <div class="card">
+      <h2>🏆 Bom Desempenho</h2>
+      <p id="qtd-bom">—</p>
+    </div>
+
+    <div class="card">
+      <h2>⚠️ Precisam de Atenção</h2>
+      <p id="qtd-atencao">—</p>
+    </div>
+
+    <div class="card">
+      <h2>✅ Frequência</h2>
+      <p id="frequencia">—</p>
+      <small id="frequencia-texto"></small>
+    </div>
+
+    <div class="card destaque">
+      <h2>🥇 Destaque da Semana</h2>
+      <p id="destaque-semana">—</p>
+    </div>
+  </section>
+
+  <!-- TABELA DE NOTAS -->
+  <section class="area-tabela">
+    <h2 class="titulo-tabela">📚 Notas por Disciplina</h2>
+    <div class="tabela-scroll">
+      <table>
+        <thead>
+          <tr>
+            <th>Disciplina</th>
+            <th>1º Tri</th>
+            <th>2º Tri</th>
+            <th>3º Tri</th>
+            <th>Média</th>
+            <th>Faltas</th>
+            <th>Situação</th>
+          </tr>
+        </thead>
+        <!-- O JavaScript vai preencher estas linhas -->
+        <tbody id="corpo-tabela"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
