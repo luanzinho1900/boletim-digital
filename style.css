@@ -189,3 +189,203 @@ tbody tr:hover {
     font-size: 1.4rem;
   }
 }
+
+/* ===== ÁREA DE LOGIN (PIN) ===== */
+.area-login {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 24px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 16px rgba(21, 101, 192, 0.15);
+  border-top: 5px solid #ff9800;
+  text-align: center;
+}
+
+.area-login h2 {
+  color: #1565c0;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.info-aluno {
+  font-size: 0.95rem;
+  color: #1a2b4c;
+  margin-bottom: 16px;
+}
+
+.info-aluno strong {
+  color: #1565c0;
+}
+
+.campo-pin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.campo-pin label {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1a2b4c;
+}
+
+.campo-pin input {
+  width: 180px;
+  padding: 10px 14px;
+  font-size: 1.1rem;
+  text-align: center;
+  letter-spacing: 4px;
+  border: 2px solid #90caf9;
+  border-radius: 10px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.campo-pin input:focus {
+  border-color: #1565c0;
+}
+
+/* ===== BOTÕES ===== */
+.btn-principal {
+  background: linear-gradient(135deg, #1565c0, #2196f3);
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(21, 101, 192, 0.35);
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.btn-principal:hover {
+  transform: translateY(-2px);
+}
+
+.btn-principal:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-salvar {
+  background: linear-gradient(135deg, #2e7d32, #4caf50);
+  color: #ffffff;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(46, 125, 50, 0.35);
+  transition: transform 0.15s ease, opacity 0.2s ease;
+}
+
+.btn-salvar:hover {
+  transform: translateY(-2px);
+}
+
+.btn-salvar:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.btn-cancelar {
+  background: #eceff1;
+  color: #455a64;
+  border: none;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.2s ease;
+}
+
+.btn-cancelar:hover {
+  transform: translateY(-2px);
+  background: #cfd8dc;
+}
+
+/* ===== MENSAGENS ===== */
+.mensagem-login,
+.mensagem-acao {
+  margin-top: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  min-height: 1.2em;
+}
+
+.mensagem-erro {
+  color: #c62828;
+}
+
+.mensagem-sucesso {
+  color: #2e7d32;
+}
+
+.mensagem-info {
+  color: #1565c0;
+}
+
+/* ===== BARRA DE AÇÕES ===== */
+.barra-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.barra-acoes .mensagem-acao {
+  margin: 0;
+  flex-basis: 100%;
+}
+
+/* ===== UTILITÁRIOS ===== */
+.oculto {
+  display: none !important;
+}
+
+/* ===== EDIÇÃO NA TABELA ===== */
+.input-nota,
+.input-faltas {
+  width: 70px;
+  padding: 6px 8px;
+  font-size: 0.9rem;
+  text-align: center;
+  border: 2px solid #90caf9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-nota:focus,
+.input-faltas:focus {
+  border-color: #1565c0;
+}
+
+.input-invalido {
+  border-color: #c62828 !important;
+  background: #ffebee;
+}
+
+/* Inputs de faltas por trimestre na edição */
+.input-faltas-tri {
+  width: 52px;
+  padding: 6px 6px;
+  font-size: 0.85rem;
+  text-align: center;
+  border: 2px solid #90caf9;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.input-faltas-tri:focus {
+  border-color: #1565c0;
+}
